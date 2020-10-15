@@ -14,7 +14,7 @@
       src="https://kit.fontawesome.com/22343c2bb3.js"
       crossorigin="anonymous"
     ></script>
-    <title>Discription</title>
+    <title>Comments</title>
   </head>
   <body>
     <div class="container clearfix">
@@ -47,8 +47,24 @@
           </div>
         </div>
       </nav>
-      <h3>Ervaringen</h3>
-      <p>In het begin van de vakantie was het even wennen omdat we door "corona" niet op reis konden, maar we konden ons toch goed vermaken thuis vooral door het mooie weer en het zwembad van 32 °C.</p>
-      <p></p>
+      <form class="container" style="margin-top: 100px;">
+        <fieldset>
+            <legend>Comments</legend> 
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                class="form-control"
+                type="text"
+                id="name"
+                placeholder="Enter name"
+              />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea class="form-control p-3 mb-2 bg-light border border-dark" type="text" id="message" rows="3"></textarea>
+            </div>
+        </fieldset>
+        <button class="btn btn-success" type="button">Send in</button>
+    </form>
   </body>
 </html>
